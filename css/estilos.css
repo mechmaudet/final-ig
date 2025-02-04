@@ -1,0 +1,11 @@
+body {
+    background-image: url(../imgs/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Alte Haas Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
