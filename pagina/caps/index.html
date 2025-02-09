@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanPage Fleabag</title>
+    <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
+    <link href="../../css/estilos.css" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen flex flex-col bg-center">
+    <div class="m-4">
+        <nav class="relative flex items-start justify-center"> 
+            <div class="bg-yellow-400 mix-blend-luminosity rounded-lg flex">
+                <h1 class="text-6xl p-5 text-black">FLEABAG</h1>
+                <ul class="flex p-3 text-gray-800">
+                    <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
+                    <li class="p-3 text-l"><a href="index.html" class="hover:text-white">CAPITULOS</a></li>
+                    <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="../quiz.html" class="hover:text-white">QUIZ</a></li>
+                    <li class="p-3 text-l"><a href="../extras.html" class="hover:text-white">EXTRAS</a></li>
+                    <li class="p-3 text-l"><a href="../teatro.html" class="hover:text-white">OBRA DE TEATRO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="bg-black p-3 flex-grow">
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"> 
+            <div class="relative w-full h-auto">
+                <img src="imgs/tempp-1.jpg" alt="Temporada 1" class="w-full h-full object-cover">
+                <a href="temp-1.html" class="absolute inset-0 flex items-center justify-center bg-opacity-0 text-white text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> TEMPORADA 1 </a>
+            </div>
+            <div class="relative w-full h-auto">
+                <img src="imgs/temp-2.jpg" alt="Temporada 2" class="w-full h-full object-cover">
+                <a href="temp-2.html" class="absolute inset-0 flex items-center justify-center bg-opacity-0 text-white text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> TEMPORADA 2 </a>
+            </div>
+            <div class="relative w-full h-auto">
+                <img src="imgs/bts.jpg" alt="Behind the scenes" class="w-full h-full object-cover">
+                <a href="bts.html" class="absolute inset-0 flex items-center justify-center bg-opacity-0 text-white text-3xl font-bold opacity-0 transition-all duration-300 hover:bg-opacity-70 hover:opacity-100"> BEHIND THE SCENES </a>
+            </div>
+        </section>
+    </main> 
+
+    <footer class="w-full bg-black/50 p-3">
+        <div class="max-w-4xl mx-auto text-center text-neutral-300">
+            <ul class="flex justify-center space-x-6 mb-2">
+                <li><a href="footer/index.html" class="hover:text-white">Créditos</a></li>
+                <li><a href="footer/contacto.html" class="hover:text-white">Contacto</a></li>
+                <li><a href="footer/alumno.html" class="hover:text-white">Alumno</a></li>
+            </ul>
+            <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
+        </div>
+    </footer>
+</body>
+</html>

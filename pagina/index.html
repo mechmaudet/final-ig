@@ -8,30 +8,32 @@
     <link href="../css/estilos.css" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="h-screen flex items-center justify-center relative bg-center">
-        <div class="m-4 absolute inset-0">
-        <nav class="relative flex items-center justify-center h-full flex-col"> 
-            <h1 class="text-7xl p-5 text-black absolute top-3">FLEABAG</h1>
-            <div class=" bg-yellow-400 mix-blend-luminosity rounded-lg">
-            <ul class="flex p-3 text-gray-800">
-                <li class="p-3 text-l "><a href="index.html">HOME</a></li>
-                <li class="p-3 text-l"><a href="capitulos.html">CAPITULOS</a></li>
-                <li class="p-3 text-l"><a href="personajes.html">PERSONAJES</a></li>
-                <li class="p-3 text-l"><a href="quiz.html">QUIZ</a></li>
-                <li class="p-3 text-l"><a href="extras.html">EXTRAS</a></li>
-                <li class="p-3 text-l"><a href="teatro.html">OBRA DE TEATRO</a></li>
-            </ul>
+<body class="h-screen flex flex-col bg-center">
+    <!-- TITULO -->
+    <h1 class="text-7xl p-5 text-black flex justify-center">FLEABAG</h1>
+    <div class="flex-grow flex flex-col items-center justify-center">
+        <!-- NAV -->
+        <nav class="relative flex flex-col items-center">
+            <div class="bg-yellow-400 mix-blend-luminosity rounded-lg content-center">
+                <ul class="flex p-3 text-gray-800 ">
+                    <li class="p-3 text-l"><a href="index.html" class="hover:text-white">HOME</a></li>
+                    <li class="p-3 text-l"><a href="caps/index.html" class="hover:text-white">CAPITULOS</a></li>
+                    <li class="p-3 text-l"><a href="personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="quiz.html" class="hover:text-white">QUIZ</a></li>
+                    <li class="p-3 text-l"><a href="extras.html" class="hover:text-white">EXTRAS</a></li>
+                    <li class="p-3 text-l"><a href="teatro.html" class="hover:text-white">OBRA DE TEATRO</a></li>
+                </ul>
             </div>
-        </nav>
-        </div>
-    <footer class="absolute top-150 left-0">
-        <div class="bg-black/50 p-3 m-2 rounded-lg inline-flex">
-            <ul class="flex inline-flex">
-                <li class="p-3 text-s"> <a href="footer/index.html"> CRÉDITOS </a> </li>
-                <li class="p-3 text-s"> <a href="footer/contacto.html"> CONTACTO </a> </li>
-                <li class="p-3 text-s"> <a href="footer/alumno.html"> INFO DE ALUMNO </a> </li>
+        </nav> 
+    </div>
+    <footer class="w-full bg-black/50 p-3">
+        <div class="max-w-4xl mx-auto text-center text-neutral-300">
+            <ul class="flex justify-center space-x-6 mb-2">
+                <li><a href="footer/index.html" class="hover:text-white">Créditos</a></li>
+                <li><a href="footer/contacto.html" class="hover:text-white">Contacto</a></li>
+                <li><a href="footer/alumno.html" class="hover:text-white">Alumno</a></li>
             </ul>
-            <p class="content-center text-s pl-76"> Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores. </p>
+            <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
         </div>
     </footer>
 </body>
