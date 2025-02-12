@@ -6,14 +6,15 @@
     <title> FanPage Fleabag - Temporada 1 </title>
     <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
     <link href="../../css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="h-screen flex flex-col bg-center bg-teal-600">
+<body class="h-screen flex flex-col bg-center bg-neutral-200">
     <div class="m-4">
         <nav class="relative flex items-start justify-center"> 
             <div class="bg-red-700 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+                <h1 class="text-6xl p-5 text-white"> FLEABAG </h1>
+                <ul class="flex p-3 text-white items-center">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -25,38 +26,183 @@
         </nav>
     </div>
     <main class="p-3 flex-grow text-black">
-        <section class="flex flex-row justify-center bg-teal-500/60 p-3">
-            <iframe width="700" height="393,75" src="https://www.youtube.com/embed/L3iqdpYoZNU?si=LIIVO_SSVk42YCWf&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="items-center""></iframe>
+        <section class="flex flex-row justify-center bg-teal-500/30 p-3">
+            <iframe width="700" height="393,75" src="https://www.youtube.com/embed/L3iqdpYoZNU?si=LIIVO_SSVk42YCWf&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="items-center basis-7xl""></iframe>
             <div class="flex flex-col">
-            <p class=" text-xl p-5"> Es una comedia adaptada de una obra teatral protagonizada por una joven chica que intenta sobrellevar su vida después de una reciente tragedia.
+            <p class=" text-xl p-5 "> Es una comedia adaptada de una obra teatral protagonizada por una joven chica que intenta sobrellevar su vida después de una reciente tragedia.
             </p>
             <p class=" text-xl pl-5 pt-3">Una mezcla perfecta de risas, lágrimas y momentos incómodos, Fleabag te atrapará con su irreverencia y humanidad cruda. </p>
+                <div class="p-5 pb-2 divide-y">
+                    <p class="pb-2"> <span class="text-red-600 font-bold text-l">Creadora: </span> Phoebe Waller Bridge </p>
+                    <p class="pb-2 pt-2"> <span class="text-red-600 font-bold text-l">Episodios:</span> 6 </p>
+                    <p class="pb-2 pt-2"> <span class="text-red-600 font-bold text-l">Estreno:</span> 21 de Julio, 2016 </p>
+                    <p class="pb-2 pt-2"> <span class="text-red-600 font-bold text-l">Finalización:</span> 25 de Agosto, 2016 </p>
+                    <p class="pt-2"> <span class="text-red-600 font-bold text-l">Directores:</span> Harry Bradbeer - Tim Kirby </p>
+                </div>
             </div>
         </section>
         <!-- CAPITULO 1-->
-        <section class="">
+        <section>
             <div class="flex flex-row p-3">
-                <img src="imgs/cap1-1.jpg" alt="Episodio 1 Temporada 1 Fleabag" width="400" height="400">
-                <div class="flex flex-col p-3">
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="imgs/cap1/cap1-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="imgs/cap1/g1-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="imgs/cap1/g2-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="imgs/cap1/g3-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="imgs/cap1/g4-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="imgs/cap1/g5-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                </div>
+                <!-- staticr controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+                </button>
+            </div>
+            <!-- SINOSPSIS -->
+            <div class="flex flex-col p-3">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 1 </h2>
                 <p class="pt-3"> Fleabag navega por su caótica vida en Londres, enfrentando relaciones fallidas, un negocio en crisis y la pérdida de su mejor amiga. </p>
-                </div>
+            </div>
             </div>
         </section>
         <!-- CAPITULO 2-->
         <section class="">
             <div class="flex flex-row p-3">
-                <img src="imgs/cap2-1.jpg" alt="Episodio 2 Temporada 1 Fleabag" width="400" height="400">
+                <!-- SINOSPSIS -->
                 <div class="flex flex-col p-3">
-                <h2 class=" text-red-600 text-2xl font-bold"> Episodio 2 </h2>
-                <p class="pt-3"> Entre una visita al banco, un evento feminista y tensiones familiares, Fleabag intenta encontrar equilibrio en su vida… sin mucho éxito. </p>
+                    <h2 class=" text-red-600 text-2xl font-bold"> Episodio 2 </h2>
+                    <p class="pt-3"> Entre una visita al banco, un evento feminista y tensiones familiares, Fleabag intenta encontrar equilibrio en su vida… sin mucho éxito. </p>
+                </div>
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap2/cap2-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="imgs/cap2/g1-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap2/g2-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap2/g3-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap2/g4-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap2/g5-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                    </div>
+                    <!-- staticr controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                    </button>
                 </div>
             </div>
         </section>
         <!-- CAPITULO 3-->
         <section class="">
             <div class="flex flex-row p-3">
-                <img src="imgs/cap3-1.jpg" alt="Episodio 3 Temporada 1 Fleabag" width="400" height="400">
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap3/cap3-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="imgs/cap3/g1-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap3/g2-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap3/g3-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap3/g4-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap3/g5-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                    </div>
+                    <!-- staticr controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                    </button>
+                </div>
+                <!-- SINOPSIS -->
                 <div class="flex flex-col p-3">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 3 </h2>
                 <p class="pt-3"> Una reunión familiar la obliga a enfrentar su dolor, su complicada relación con su madrastra y la presencia cada vez más incómoda de Martin. </p>
@@ -66,17 +212,108 @@
         <!-- CAPITULO 4-->
         <section class="">
             <div class="flex flex-row p-3">
-                <img src="imgs/cap4-1.jpg" alt="Episodio 4 Temporada 1 Fleabag" width="400" height="400">
+                <!-- SINOPSIS -->
                 <div class="flex flex-col p-3">
-                <h2 class=" text-red-600 text-2xl font-bold"> Episodio 4 </h2>
-                <p class="pt-3"> Después de una mala crítica a su café, Fleabag busca formas poco convencionales de recuperar el control de su vida, mientras lidia con su hermana y su pasado. </p>
+                    <h2 class=" text-red-600 text-2xl font-bold"> Episodio 4 </h2>
+                    <p class="pt-3"> Después de una mala crítica a su café, Fleabag busca formas poco convencionales de recuperar el control de su vida, mientras lidia con su hermana y su pasado. </p>
+                </div>
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap4/cap4-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="imgs/cap4/g1-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap4/g2-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap4/g3-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap4/g4-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap4/g5-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                    </div>
+                    <!-- staticr controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                    </button>
                 </div>
             </div>
         </section>
         <!-- CAPITULO 5-->
         <section class="">
             <div class="flex flex-row p-3">
-                <img src="imgs/cap5-1.jpg" alt="Episodio 5 Temporada 1 Fleabag" width="400" height="400">
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap5/cap5-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="imgs/cap5/g1-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap5/g2-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap5/g3-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap5/g4-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap5/g5-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                    </div>
+                    <!-- staticr controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                    </button>
+                </div>
                 <div class="flex flex-col p-3">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 5 </h2>
                 <p class="pt-3"> Una cena familiar se convierte en un campo de batalla emocional, revelando tensiones ocultas y poniendo a prueba las relaciones de Fleabag con su familia. </p>
@@ -86,10 +323,55 @@
         <!-- CAPITULO 6-->
         <section class="">
             <div class="flex flex-row p-3">
-                <img src="imgs/cap6-1.jpg" alt="Episodio 6 Temporada 1 Fleabag" width="400" height="400">
                 <div class="flex flex-col p-3">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 6 </h2>
                 <p class="pt-3"> Las piezas del rompecabezas empiezan a encajar mientras Fleabag enfrenta verdades incómodas sobre su pasado, su culpa y su futuro. </p>
+                </div>
+                <div id="gallery" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap6/cap6-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="imgs/cap6/g4-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap6/g2-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap6/g3-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap6/g1-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/cap6/g5-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        </div>
+                    </div>
+                    <!-- staticr controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500/30 dark:bg-teal-300/30 group-hover:bg-white/50 dark:group-hover:bg-teal-100/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -104,5 +386,6 @@
             <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
