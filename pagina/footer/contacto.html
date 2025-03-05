@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FanPage Fleabag - Capitulos </title>
+    <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
+    <link href="../../css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/blacktones-personal-use" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen flex flex-col bg-center bg-black">
+    <div class="m-4">
+        <nav class="relative flex items-start justify-center"> 
+            <div class="bg-red-900 rounded-lg flex">
+                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
+                <ul class="flex p-3 text-black items-center">
+                    <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
+                    <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
+                    <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="../quiz.html" class="hover:text-white">QUIZ</a></li>
+                    <li class="p-3 text-l"><a href="../extras/index.html" class="hover:text-white">EXTRAS</a></li>
+                    <li class="p-3 text-l"><a href="../teatro.html" class="hover:text-white">OBRA DE TEATRO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main class="p-3 flex-grow">
+        <h2 class="text-3xl text-red-800 font-bold p-3"> Contactate con nosotros </h2>
+        <p class="pl-3"> Si estamos usando algún dato o alguna pieza de tu autoría y queres que sea removida de la página o mismo si queres aportar datos o arte este es el lugar! </p>
+        <p class="pl-3"> Dejanos tu mensaje y sera respondido a la brevedad. Nos sirve mucho tambien cualquier consejo para mejorar la página. </p>
+        <section class="py-10 px-5 max-w-screen-sm mx-auto">
+                <form class="space-y-6 text-black" id="form" action="https://formsubmit.co/mechiolivera@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">                    <div>
+                        <label for="email" class="block text-sm font-medium text-white p-3">Mail</label>
+                        <input type="email" id="email"  name="email" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="nombre@mail.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-white p-3">Asunto</label>
+                        <input type="text" id="subject"  name="subject" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Asunto" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-white p-3">Tu mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 rounded-lg shadow-sm border bg-gray-50" placeholder="Dejame tu mensaje acá..." required max="500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full p-3 text-center font-medium text-white bg-red-600 rounded-lg hover:bg-red-900" id="mensaje"> Enviar </button>
+                </form>
+        </section>
+    </main> 
+    <footer class="w-full bg-black/50 p-3">
+        <div class="max-w-4xl mx-auto text-center text-neutral-300">
+            <ul class="flex justify-center space-x-6 mb-2">
+                <li><a href="index.html" class="hover:text-white">Créditos</a></li>
+                <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                <li><a href="alumno.html" class="hover:text-white">Alumno</a></li>
+            </ul>
+            <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../../js/validacion.js"></script>
+</body>
+</html>
