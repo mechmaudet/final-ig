@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title> FanPage Fleabag - Personajes </title>
+    <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
+    <link href="../../css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+</head>
+<body class="h-screen flex flex-col bg-center bg-black">
+    <header class="m-4">
+        <nav class="relative flex items-start justify-center"> 
+            <div class="bg-red-900 rounded-lg flex">
+                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
+                <ul class="flex p-3 text-black items-center">
+                    <li class="p-3 text-l"><a href="index.html" class="hover:text-white">HOME</a></li>
+                    <li class="p-3 text-l"><a href="caps/index.html" class="hover:text-white">CAPITULOS</a></li>
+                    <li class="p-3 text-l"><a href="personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="trivia.html" class="hover:text-white">TRIVIA</a></li>
+                    <li class="p-3 text-l"><a href="extras/index.html" class="hover:text-white">EXTRAS</a></li>
+                    <li class="p-3 text-l"><a href="premios.html" class="hover:text-white">PREMIOS</a></li>
+                    <li class="p-3 text-l"><a href="merch.html" class="hover:text-white">MERCH</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="p-3">
+            <h2 class="text-4xl text-red-900 font-bold p-3"> Trivia Fleabag </h2>
+            <h3 class="text-2xl p-3"> ¿Cuánto conoces la serie? </h3>
+            <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acaba el tiempo. Contestá en 40 segundos con la menor cantidad de errores por responder incorrectamente y la mayor cantidad de puntos respondiendo correctamente! </p>
+            <section class="p-3 rounded-lg bg-blue-800/30" id="juego">
+            <!-- Botón de jugar -->
+            <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute left-180 top-120" type="button" id="jugar" > JUGAR </button>
+            <div class="flex flex-row place-content-around gap-2">
+                <!-- Timer -->
+                <p class="rounded-lg bg-fuchsia-900 p-5 " id="tiempo"> 00:00 </p>
+                <!-- Puntos y errores -->
+                <div class="flex flex-row">
+                    <p class="rounded-lg bg-amber-500 p-5 mr-2" id="puntos"> 0 puntos  </p>
+                    <p class="rounded-lg bg-amber-500 p-5 " id="errores"> 0 errores  </p>
+                </div>
+            </div>
+            <div class="flex flex-col p-3">
+                <!-- Preguntas -->
+                <h4 class="rounded-lg bg-blue-950 p-6 self-center text-3xl type-bold" id="p"> </h4>
+                <!-- Respuestas opc 1, 2 y 3 -->
+                <ul class="flex flex-col p-3 self-center text-2xl" id="r"> 
+                    <li id="opc1" class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
+                    <li id="opc2" class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
+                    <li id="opc3 " class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+        <h2 class="font-bold text-2xl p-3"> Tabla de posiciones</h2>
+        <p class="p-3 text-l"> Tratá de conseguir el mejor puntaje y sé parte del top 5! </p>
+        <div class="p-3 flex flex-row justify-center"> 
+            <table id="tablaPosiciones" class="m-4">
+                <tr class="flex flex-row justify-around">
+                    <th class="rounded-lg bg-red-900 p-3 m-4">Nombre</th>
+                    <th class="rounded-lg bg-red-900 p-3 m-4">Puntos</th>
+                    <th class="rounded-lg bg-red-900 p-3 m-4">Errores</th>
+                </tr>
+                <tr class="flex flex-row justify-around pb-2 text-xl">
+                    <td id="nombreJ1"> </td>
+                    <td id="puntos1"> </td>
+                    <td id="errores1"> </td>
+                </tr>
+                <tr class="flex flex-row justify-around pb-2 text-xl">
+                    <td id="nombreJ2"> </td>
+                    <td id="puntos2"> </td>
+                    <td id="errores2"> </td>
+                </tr>
+                <tr class="flex flex-row justify-around pb-2 text-xl">
+                    <td id="nombreJ3"> </td>
+                    <td id="puntos3"> </td>
+                    <td id="errores3"> </td>
+                </tr>
+                <tr class="flex flex-row justify-around pb-2 text-xl">
+                    <td id="nombreJ4"> </td>
+                    <td id="puntos4"> </td>
+                    <td id="errores4"> </td>
+                </tr>
+                <tr class="flex flex-row justify-around pb-2 text-xl">
+                    <td id="nombreJ5"> </td>
+                    <td id="puntos5"> </td>
+                    <td id="errores5"> </td>
+                </tr>
+            </table>
+        </div>
+        </section>
+    </main> 
+    <footer class="w-full bg-black/50 p-3">
+        <div class="max-w-4xl mx-auto text-center text-neutral-300">
+            <ul class="flex justify-center space-x-6 mb-2">
+                <li><a href="footer/index.html" class="hover:text-white">Créditos</a></li>
+                <li><a href="footer/contacto.html" class="hover:text-white">Contacto</a></li>
+                <li><a href="footer/alumno.html" class="hover:text-white">Alumno</a></li>
+            </ul>
+            <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="../js/trivia.js"></script>
+</body>
+</html>
