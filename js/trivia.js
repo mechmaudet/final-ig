@@ -31,11 +31,7 @@ let tiempo = 0
 let limite = 40
 let intervalo; // Variable global para manejar el temporizador
 
-// Ocultar todo
-p.style.visibility = "hidden"
-r.style.visibility = "hidden"
-
-// Preguntas y respuestas
+// Preguntas y respuestas con utilización de la IA
 const preguntasyRespuestas = [
   {
     pregunta: "¿Cómo se llama la madrina de Fleabag?",
@@ -164,9 +160,13 @@ const preguntasyRespuestas = [
   }
 ];
 
+// Ocultar todo
+p.style.visibility = "hidden"
+r.style.visibility = "hidden"
+
 ///////////////////// EVENTOS
 
-// Boton jugar para empezar juegp
+// Boton jugar para empezar juego
 jugar.addEventListener("click", function(){ 
   iniciarJuego();
   nombreJ = prompt("Escribí tu nombre", "");
@@ -184,13 +184,13 @@ jugar.addEventListener("click", function(){
   resp.style.visibility = "visible"
 
   clearInterval(intervalo); // Elimina cualquier intervalo previo
+
   intervalo = setInterval(function() {
       tiempo++
-      timer.innerHTML = `00:${tiempo.toString().padStart(2, "0")}`;
+      timer.innerHTML = `00:${tiempo.toString().padStart(2, "0")}`; // padstart se asegura que siempre se tengan 2 cifras
       tiempoLimite();
-  }, 1000);} else {//si no ponen un nombre no pueden jugar
+  }, 1000);} else { //si no ponen un nombre no pueden jugar
     alert("Porfavor ingrese un nombre para jugar");}
-
 
   // ALMACENAMIENTO DE NOMBRE
   localStorage.setItem("nombreJ", nombreJ);
@@ -206,13 +206,12 @@ for (let i = 0; i < opciones.length; i++) {
         opcionSeleccionada.style.backgroundColor = "green";
         puntosJ++;
         puntos.innerHTML = `${puntosJ} puntos`;
-
     } else {
         opcionSeleccionada.style.backgroundColor = "red";
         erroresJ++;
         erroresP.innerHTML = `${erroresJ} errores`;
 
-        // Resaltar la respuesta correcta en verde
+        // Resalta la respuesta correcta en verde
         for (let j = 0; j < opciones.length; j++) {
           if (opciones[j].innerText === respuestaCorrecta) {
             opciones[j].style.backgroundColor = "green";
@@ -220,7 +219,7 @@ for (let i = 0; i < opciones.length; i++) {
         }
     }
 
-  // Deshabilitar temporalmente los clics en las opciones
+  // Deshabilita temporalmente los clics en las opciones
   for (let j = 0; j < opciones.length; j++) {
     opciones[j].style.pointerEvents = "none";
   }
@@ -271,7 +270,7 @@ function mostrarNuevaPregunta() {
   // Lee si ya se hicieron las 10 preguntas
   if (indicePreguntaActual >= preguntasSeleccionadas.length) {
     clearInterval(intervalo); // Detiene el temporizador al finalizar el juego
-    alert(`Juego terminado. Tu puntaje final es: ${puntosJ} puntos. Tuviste ${erroresJ} errores.`);
+    alert(`Juego terminado. ${nombreJ} tu puntaje final es: ${puntosJ} puntos. Tuviste ${erroresJ} errores.`);
     reset();
     return;
   }
@@ -332,6 +331,13 @@ function reset(){
 ///////////// TABLA DE POSICIONES
 function mostrarTablaPosiciones() {
   let tabla = JSON.parse(localStorage.getItem("tablaPosiciones")) || [];
+
+  tabla.sort((a, b) => {
+    if (b.puntos !== a.puntos) {
+        return b.puntos - a.puntos; // Ordenar por puntos de mayor a menor
+    }
+    return a.errores - b.errores; // En caso de empate, ordenar por errores de menor a mayor
+  });
 
   // Iterar sobre las filas de la tabla (de 1 a 5 jugadores)
   for (let i = 0; i < 5; i++) {

@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> FanPage Fleabag - Contacto </title>
+    <link rel="shortcut icon" href="../../imgs/icono.ico">
     <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/blacktones-personal-use" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
         <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
-            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <h1 class="text-4xl sm:text-6xl p-2 text-white"><a href="../index.html" class="hover:text-black focus:text-red-500"> FLEABAG </a></h1>
             <button id="menu-button" class="sm:hidden text-white p-2">
                 &#9776; <!-- Ícono de menú hamburguesa -->
             </button>
             <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
-                    <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
-                    <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
-                    <li class="p-3 text-l"><a href="../personajes/index.html" class="hover:text-white">PERSONAJES</a></li>
-                    <li class="p-3 text-l"><a href="../trivia.html" class="hover:text-white">TRIVIA</a></li>
-                    <li class="p-3 text-l"><a href="../extras/index.html" class="hover:text-white">EXTRAS</a></li>
-                    <li class="p-3 text-l"><a href="../premios.html" class="hover:text-white">PREMIOS</a></li>
-                    <li class="p-3 text-l"><a href="../merch/index.html" class="hover:text-white">MERCH</a></li>
+                    <li class="p-3 text-l"><a href="../index.html" class="hover:text-black focus:text-red-500">HOME</a></li>
+                    <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-black focus:text-red-500">CAPITULOS</a></li>
+                    <li class="p-3 text-l"><a href="../personajes/index.html" class="hover:text-black focus:text-red-500">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="../trivia.html" class="hover:text-black focus:text-red-500">TRIVIA</a></li>
+                    <li class="p-3 text-l"><a href="../extras/index.html" class="hover:text-black focus:text-red-500">EXTRAS</a></li>
+                    <li class="p-3 text-l"><a href="../premios.html" class="hover:text-black focus:text-red-500">PREMIOS</a></li>
+                    <li class="p-3 text-l"><a href="../merch/index.html" class="hover:text-black focus:text-red-500">MERCH</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,7 +36,7 @@
         <p class="pl-3"> Si estamos usando algún dato o alguna pieza de tu autoría y queres que sea removida de la página o mismo si queres aportar datos o arte este es el lugar! </p>
         <p class="pl-3"> Dejanos tu mensaje y sera respondido a la brevedad. Nos sirve mucho tambien cualquier consejo para mejorar la página. </p>
         <section class="py-10 px-5 max-w-screen-sm mx-auto">
-                <form class="space-y-6 text-black" id="form" action="https://formsubmit.co/mechiolivera@gmail.com" method="POST">
+                <form class="space-y-6 text-black" id="form" action="https://formsubmit.co/mechiolivera@gmail.com" method="POST"    
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="contacto.html">
                     <div>
@@ -58,9 +58,9 @@
     <footer class="w-full bg-black/50 p-3">
         <div class="max-w-4xl mx-auto text-center text-neutral-300">
             <ul class="flex justify-center space-x-6 mb-2">
-                <li><a href="index.html" class="hover:text-white">Créditos</a></li>
-                <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
-                <li><a href="alumno.html" class="hover:text-white">Alumno</a></li>
+                <li><a href="index.html" class="hover:text-white focus:text-red-500">Créditos</a></li>
+                <li><a href="contacto.html" class="hover:text-white focus:text-red-500">Contacto</a></li>
+                <li><a href="alumno.html" class="hover:text-white focus:text-red-500">Alumno</a></li>
             </ul>
             <p>Este sitio es una fanpage sin afiliación oficial. Fleabag es propiedad de sus respectivos creadores.</p>
         </div>
@@ -69,5 +69,5 @@
     <script src="../../js/validacion.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="../../js/nav-hamburguesa.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

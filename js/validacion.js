@@ -33,8 +33,9 @@ document.getElementById("form").addEventListener("submit", function(event) {
         document.getElementById("error-message").classList.add("hidden");
     }
 
-    // Si hay algún error, evitar el envío del formulario
-    if (!valid) {
-        event.preventDefault();
+    // Si el formulario es válido, enviarlo
+    if (valid) {
+        alert("Tu mensaje ha sido enviado correctamente.");
+        this.submit(); // Envía el formulario
     }
 });
