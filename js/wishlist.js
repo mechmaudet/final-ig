@@ -38,11 +38,4 @@ botonT.addEventListener("click", () => {
     });
 });
 
-let slideB = document.querySelector("#slide");
-let wishlist = document.querySelector("#wishlist");
 
-slideB.addEventListener("click", function() { 
-    wishlist.classList.toggle("translate-x-full");
-    slideB.classList.toggle("translate-x-full");
-
-});
