@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FanPage Fleabag - Fanart </title>
+    <title> FanPage Fleabag - Merch </title>
     <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
@@ -18,7 +21,7 @@
             <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
-                    <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="../personajes/index.html" class="hover:text-white">PERSONAJES</a></li>
                     <li class="p-3 text-l"><a href="../trivia.html" class="hover:text-white">TRIVIA</a></li>
                     <li class="p-3 text-l"><a href="../extras/index.html" class="hover:text-white">EXTRAS</a></li>
                     <li class="p-3 text-l"><a href="../premios.html" class="hover:text-white">PREMIOS</a></li>
@@ -27,13 +30,13 @@
             </div>
         </nav>
     </header>
-    <main class="p-3 flex-grow bg-black m-1 rounded-lg">
+    <main class="p-3 flex-grow bg-black/90 m-1 rounded-lg">
     <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-        <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800" id="todosB"> Todos </button>
-        <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" id="indumentariaB"> Indumentaria </button>
-        <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" id="tazasB"> Tazas </button>
-        <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" id="librosB"> Libros </button>
-        <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" id="otrosB"> Otros </button>
+        <button type="button" class="text-red-800 hover:text-neutral-300 border border-red-600 bg-black hover:bg-neutral-900 focus:ring-4 focus:outline-none focus:ring-red-800 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3" id="todosB"> Todos </button>
+        <button type="button" class="text-red-500 border border-white hover:border-neutral-200 bg-black focus:ring-4 focus:outline-none focus:ring-red-800 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-neutral-300" id="indumentariaB"> Indumentaria </button>
+        <button type="button" class="text-red-500 border border-white hover:border-neutral-200 bg-black focus:ring-4 focus:outline-none focus:ring-red-800 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-neutral-300" id="tazasB"> Tazas </button>
+        <button type="button" class="text-red-500 border border-white hover:border-neutral-200 bg-black focus:ring-4 focus:outline-none focus:ring-red-800 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-neutral-300" id="librosB"> Libros </button>
+        <button type="button" class="text-red-500 border border-white hover:border-neutral-200 bg-black focus:ring-4 focus:outline-none focus:ring-red-800 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-neutral-300" id="otrosB"> Otros </button>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
         <div class="libros">
@@ -139,7 +142,6 @@
         </div>
     </div>
     </main> 
-
     <footer class="w-full bg-black/50 p-3">
         <div class="max-w-4xl mx-auto text-center text-neutral-300">
             <ul class="flex justify-center space-x-6 mb-2">
@@ -153,5 +155,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="../../js/wishlist.js"></script>
+    <script src="../../js/nav-hamburguesa.js"></script>
 </body>
 </html>

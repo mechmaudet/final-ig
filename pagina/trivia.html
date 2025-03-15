@@ -7,6 +7,9 @@
     <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
@@ -18,7 +21,7 @@
             <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="caps/index.html" class="hover:text-white">CAPITULOS</a></li>
-                    <li class="p-3 text-l"><a href="personajes.html" class="hover:text-white">PERSONAJES</a></li>
+                    <li class="p-3 text-l"><a href="personajes/index.html" class="hover:text-white">PERSONAJES</a></li>
                     <li class="p-3 text-l"><a href="trivia.html" class="hover:text-white">TRIVIA</a></li>
                     <li class="p-3 text-l"><a href="extras/index.html" class="hover:text-white">EXTRAS</a></li>
                     <li class="p-3 text-l"><a href="premios.html" class="hover:text-white">PREMIOS</a></li>
@@ -27,16 +30,16 @@
             </div>
         </nav>
     </header>
-    <main class="p-3 bg-black m-1 rounded-lg">
-            <h2 class="text-4xl text-red-900 font-bold p-3"> Trivia Fleabag </h2>
+    <main class="p-3 bg-black/90 m-1 rounded-lg">
+            <h2 class="text-4xl text-red-800 font-bold p-3"> Trivia Fleabag </h2>
             <h3 class="text-2xl p-3"> ¿Cuánto conoces la serie? </h3>
-            <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acaba el tiempo. Contestá en 40 segundos con la menor cantidad de errores por responder incorrectamente y la mayor cantidad de puntos respondiendo correctamente! </p>
+            <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acabe el tiempo. Contestá en 40 segundos con la menor cantidad de errores por responder incorrectamente y la mayor cantidad de puntos respondiendo correctamente! </p>
             <section class="p-3 rounded-lg bg-blue-800/30 relative" id="juego">
             <!-- Botón de jugar -->
             <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute md:left-1/2 md:top-1/2 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:w-auto w-full" type="button" id="jugar" > JUGAR </button>
-            <div class="absolute top-3 left-0 right-0 flex justify-between p-3">
+            <div class=" flex left-0 right-0 flex justify-between p-3">
                 <!-- Timer -->
-                <p class="rounded-lg bg-fuchsia-900 p-5 " id="tiempo"> 00:00 </p>
+                <p class="rounded-lg bg-fuchsia-900 p-5" id="tiempo"> 00:00 </p>
                 <!-- Puntos y errores -->
                 <div class="flex flex-row">
                     <p class="rounded-lg bg-amber-500 p-5 mr-2" id="puntos"> 0 puntos  </p>
@@ -57,37 +60,39 @@
         <section>
         <h2 class="font-bold text-2xl p-3"> Tabla de posiciones</h2>
         <p class="p-3 text-l"> Tratá de conseguir el mejor puntaje y sé parte del top 5! </p>
-        <div class="p-3 flex flex-row justify-center"> 
-            <table id="tablaPosiciones" class="m-4">
-                <tr class="flex flex-row justify-around">
-                    <th class="rounded-lg bg-red-900 p-3 m-4">Nombre</th>
-                    <th class="rounded-lg bg-red-900 p-3 m-4">Puntos</th>
-                    <th class="rounded-lg bg-red-900 p-3 m-4">Errores</th>
+        <div class="p-3 flex flex-row justify-center overflow-x-auto shadow-md"> 
+            <table id="tablaPosiciones" class="m-2 w-full table-auto text-sm text-center">
+                <thead class="text-lg text-neutral-300 uppercase">
+                <tr class="bg-red-800/30">
+                    <th class="rounded-lg px-4 py-3">Nombre</th>
+                    <th class="rounded-lg px-4 py-3">Puntos</th>
+                    <th class="rounded-lg px-4 py-3">Errores</th>
                 </tr>
-                <tr class="flex flex-row justify-around pb-2 text-xl">
-                    <td id="nombreJ1"> </td>
-                    <td id="puntos1"> </td>
-                    <td id="errores1"> </td>
+                </thead>
+                <tr class="text-xl border-b border-red-800 bg-red-950">
+                    <td id="nombreJ1" class="px-4 py-2"> </td>
+                    <td id="puntos1" class="px-4 py-2"> </td>
+                    <td id="errores1" class="px-4 py-2"> </td>
                 </tr>
-                <tr class="flex flex-row justify-around pb-2 text-xl">
-                    <td id="nombreJ2"> </td>
-                    <td id="puntos2"> </td>
-                    <td id="errores2"> </td>
+                <tr class="text-xl border-b border-red-800 bg-red-950">
+                    <td id="nombreJ2" class="px-4 py-2"> </td>
+                    <td id="puntos2" class="px-4 py-2"> </td>
+                    <td id="errores2" class="px-4 py-2"> </td>
                 </tr>
-                <tr class="flex flex-row justify-around pb-2 text-xl">
-                    <td id="nombreJ3"> </td>
-                    <td id="puntos3"> </td>
-                    <td id="errores3"> </td>
+                <tr class="text-xl border-b border-red-800 bg-red-950">
+                    <td id="nombreJ3" class="px-4 py-2"> </td>
+                    <td id="puntos3" class="px-4 py-2"> </td>
+                    <td id="errores3" class="px-4 py-2"> </td>
                 </tr>
-                <tr class="flex flex-row justify-around pb-2 text-xl">
-                    <td id="nombreJ4"> </td>
-                    <td id="puntos4"> </td>
-                    <td id="errores4"> </td>
+                <tr class="text-xl border-b border-red-800 bg-red-950">
+                    <td id="nombreJ4" class="px-4 py-2"> </td>
+                    <td id="puntos4" class="px-4 py-2"> </td>
+                    <td id="errores4" class="px-4 py-2"> </td>
                 </tr>
-                <tr class="flex flex-row justify-around pb-2 text-xl">
-                    <td id="nombreJ5"> </td>
-                    <td id="puntos5"> </td>
-                    <td id="errores5"> </td>
+                <tr class="text-xl border-b border-red-800 bg-red-950">
+                    <td id="nombreJ5" class="px-4 py-2"> </td>
+                    <td id="puntos5" class="px-4 py-2"> </td>
+                    <td id="errores5" class="px-4 py-2"> </td>
                 </tr>
             </table>
         </div>

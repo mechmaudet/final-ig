@@ -7,6 +7,9 @@
     <link href="https://fonts.cdnfonts.com/css/alte-haas-grotesk" rel="stylesheet">
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
@@ -18,7 +21,7 @@
             <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                 <li class="p-3"><a href="../index.html" class="hover:text-gray-300">HOME</a></li>
                 <li class="p-3"><a href="index.html" class="hover:text-gray-300">CAPÍTULOS</a></li>
-                <li class="p-3"><a href="../extras/reparto.html" class="hover:text-gray-300">PERSONAJES</a></li>
+                <li class="p-3"><a href="../personajes/index.html" class="hover:text-gray-300">PERSONAJES</a></li>
                 <li class="p-3"><a href="../trivia.html" class="hover:text-gray-300">TRIVIA</a></li>
                 <li class="p-3"><a href="../extras/index.html" class="hover:text-gray-300">EXTRAS</a></li>
                 <li class="p-3"><a href="../premios.html" class="hover:text-gray-300">PREMIOS</a></li>
@@ -26,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <main class="p-3 flex-grow text-white bg-black m-1 rounded-lg">
+    <main class="p-3 flex-grow text-white bg-black/90 m-1 rounded-lg">
         <section>
         <h2 class="pb-5 pl-2 pt-3 font-bold text-5xl text-red-800"> TEMPORADA 2 </h2>
         <div class="flex flex-col md:flex-row justify-center items-center gap-4 bg-red-950 p-3">
@@ -77,16 +80,16 @@
                     </div>
                     <!-- Controles -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                             </svg>
                             <span class="sr-only">Previous</span>
                         </span>
                         </button>
                         <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-950 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                             </svg>
                             <span class="sr-only">Next</span>
@@ -95,14 +98,14 @@
                     </div>
                 <!-- SINOPSIS -->
                 <div class="flex flex-col p-3 md:w-1/2">
-                    <h2 class="text-blue-950 text-2xl font-bold"> Episodio 1 </h2>
+                    <h2 class="text-blue-900 text-2xl font-bold"> Episodio 1 </h2>
                     <p class="pt-3"> Una incómoda cena familiar pone a prueba la nueva actitud de Fleabag, pero un inesperado encuentro podría cambiarlo todo. </p>
                     <div class="p-5 pb-2 divide-y">
-                        <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott</a> </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                        <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                        <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott</a> </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                        <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                     </div>
                 </div>
             </div>
@@ -112,14 +115,14 @@
             <div class="flex flex-col md:flex-row p-3">
             <!-- SINOPSIS -->
                 <div class="flex flex-col p-3 md:w-1/2">
-                    <h2 class="text-blue-950 text-2xl font-bold"> Episodio 2 </h2>
+                    <h2 class="text-blue-900 text-2xl font-bold"> Episodio 2 </h2>
                     <p class="pt-3">Mientras intenta seguir con su vida, Fleabag se encuentra con alguien que despierta en ella emociones que no esperaba.</p>
                     <div class="p-5 pb-2 divide-y">
-                        <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Fiona Shaw </a> </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                        <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                        <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Fiona Shaw </a> </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                        <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                     </div>
                 </div>
             <!-- CARRUSEL -->
@@ -152,16 +155,16 @@
                 </div>
                     <!-- Controles -->
                     <button type="button" class="absolute top-1/2 -translate-y-1/2 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>
                     <button type="button" class="absolute top-1/2 -translate-y-1/2 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span class="sr-only">Next</span>
@@ -203,16 +206,16 @@
                     </div>
                     <!-- Controles -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>
                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-950 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span class="sr-only">Next</span>
@@ -221,14 +224,14 @@
                 </div>
                 <!-- SINOPSIS -->
                 <div class="flex flex-col p-3">
-                <h2 class=" text-blue-950 text-2xl font-bold"> Episodio 3 </h2>
+                <h2 class=" text-blue-900 text-2xl font-bold"> Episodio 3 </h2>
                 <p class="pt-3"> Un favor a Claire la lleva a una situación inesperada, mientras sus sentimientos empiezan a volverse más difíciles de ignorar.</p>
                 <div class="p-5 pb-2 divide-y">
-                    <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Kristin Scott Thomas - Andrew Scott </a> </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                    <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                    <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Kristin Scott Thomas - Andrew Scott </a> </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                    <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                 </div>
                 </div>
             </div>
@@ -238,14 +241,14 @@
             <div class="flex flex-col md:flex-row p-3">
                 <!-- SINOPSIS -->
                 <div class="flex flex-col p-3 md:w-1/2">
-                    <h2 class=" text-blue-950 text-2xl font-bold"> Episodio 4 </h2>
+                    <h2 class=" text-blue-900 text-2xl font-bold"> Episodio 4 </h2>
                     <p class="pt-3"> Fleabag acepta una invitación que la sumerge en conversaciones profundas, desafíos emocionales y tensiones crecientes.</p>
                     <div class="p-5 pb-2 divide-y">
-                        <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
-                        <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                        <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                        <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
+                        <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                        <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                     </div>
                 </div>
                 <div id="gallery" class="relative w-full md:w-1/2" data-carousel="static">
@@ -278,16 +281,16 @@
                     </div>
                     <!-- controls -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>
                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-950 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span class="sr-only">Next</span>
@@ -299,7 +302,7 @@
         <!-- CAPITULO 5-->
         <section>
             <div class="flex flex-col md:flex-row p-3">
-                <div id="gallery" class="relative w-full" data-carousel="static">
+                <div id="gallery" class="relative w-full md:w-1/2" data-carousel="static">
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                         <!-- Item 1 -->
@@ -329,16 +332,16 @@
                     </div>
                     <!-- controls -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>
                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-950 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span class="sr-only">Next</span>
@@ -347,14 +350,14 @@
                 </div>
                 <!-- SINOPSIS -->
                 <div class="flex flex-col md:w-1/2 p-3">
-                <h2 class=" text-blue-950 text-2xl font-bold"> Episodio 5 </h2>
+                <h2 class=" text-blue-900 text-2xl font-bold"> Episodio 5 </h2>
                 <p class="pt-3"> Entre secretos, confesiones y momentos de vulnerabilidad, Fleabag se acerca peligrosamente a lo que tanto ha evitado. </p>
                 <div class="p-5 pb-2 divide-y">
-                    <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                    <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                    <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html">Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                    <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                 </div>
                 </div>
             </div>
@@ -364,14 +367,14 @@
             <!-- SINOPSIS -->
             <div class="flex flex-col md:flex-row p-3">
                 <div class="flex flex-col p-3 md:w-1/2">
-                <h2 class=" text-blue-950 text-2xl font-bold"> Episodio 6 </h2>
+                <h2 class=" text-blue-900 text-2xl font-bold"> Episodio 6 </h2>
                 <p class="pt-3"> El pasado y el presente chocan en un desenlace cargado de emoción, humor y decisiones que lo cambian todo. </p>
                 <div class="p-5 pb-2 divide-y">
-                    <p class="pb-2"> <span class="text-blue-950 font-bold text-l">Director:</span> Harry Bradbeer </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html"> Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
-                    <p class="pb-2 pt-2"> <span class="text-blue-950 font-bold text-l">Géneros:</span> Comedia - Drama </p>
-                    <p class="pt-2"> <span class="text-blue-950 font-bold text-l">Certificado:</span> +18 </p>
+                    <p class="pb-2"> <span class="text-blue-900 font-bold text-l">Director:</span> Harry Bradbeer </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Guionista: </span> Phoebe Waller Bridge </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Elenco:</span> <a class="hover:text-teal-600 " href="../extras/reparto.html"> Phoebe Waller Bridge - Olivia Colman - Andrew Scott </a> </p>
+                    <p class="pb-2 pt-2"> <span class="text-blue-900 font-bold text-l">Géneros:</span> Comedia - Drama </p>
+                    <p class="pt-2"> <span class="text-blue-900 font-bold text-l">Certificado:</span> +18 </p>
                 </div>
                 </div>
                 <div id="gallery" class="relative w-full md:w-1/2" data-carousel="static">
@@ -385,19 +388,27 @@
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="imgs/temp2/cap6/g5-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 2">
                         </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/temp2/cap6/cap6-2.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 2">
+                        </div>
+                         <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="imgs/temp2/cap6/g2-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 2">
+                        </div>
                     </div>
                     <!-- controls -->
                     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                     </button>
                     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-950 dark:bg-blue-900/30 group-hover:bg-white/50 dark:group-hover:bg-blue-300/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
                         <span class="sr-only">Next</span>
