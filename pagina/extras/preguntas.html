@@ -8,14 +8,15 @@
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/blacktones-personal-use" rel="stylesheet">
-
 </head>
-<body class="h-screen flex flex-col bg-center bg-black">
+<body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-900 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -27,8 +28,8 @@
             </div>
         </nav>
     </header>
-    <main class="p-3 flex-grow">
-        <h2 class="p-3 font-bold text-4xl text-red-800"> Preguntas frecuentes </h2>
+    <main class="p-3 flex-grow bg-black rounded-lg m-1">
+        <h2 class="p-3 font-bold text-4xl text-red-800 pb-4"> Preguntas frecuentes </h2>
         <section>
             <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-red-100 dark:bg-red-800 text-red-600 dark:text-white">
                 <!-- PREGUNTA 1 -->
@@ -173,7 +174,7 @@
                 </div>
             </div>  
         </section>
-        <div class="p-4 flex flex-row justify-around ">
+        <div class="p-4 flex flex-col md:flex-row justify-center md:justify-around items-center gap-4">
             <a href="reparto.html" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Ir a Reparto </a>
             <a href="#top" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Volver arriba </a>
             <a href="fanart.html" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Ir a Fanart</a>
@@ -191,5 +192,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="../../js/nav-hamburguesa.js"></script>
 </body>
 </html>

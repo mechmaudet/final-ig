@@ -8,12 +8,14 @@
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col bg-center bg-black">
+<body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-900 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -25,13 +27,13 @@
             </div>
         </nav>
     </header>
-    <main class=" p-3 flex-grow">
+    <main class=" p-3 flex-grow bg-black rounded-lg m-1">
         <h2 class="text-3xl text-red-800 font-bold p-3"> Elenco Principal </h2>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row">
-                    <img src="imgs/reparto/phoebe.jpg" alt="Fleabag - Phoebe Waller-Bridge">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start">
+                    <img src="imgs/reparto/phoebe.jpg" alt="Fleabag - Phoebe Waller-Bridge" class="shadow-lg">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Phoebe Waller-Bridge </h3>
-                    <ul>  
+                    <ul class="text-sm md:text-base">  
                         <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 14 de julio de 1985 </li>
                         <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Fleabag </li>
                         <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Escritora, productora y actriz británica. Es la creadora, guionista y protagonista de Fleabag, basada en su obra de teatro homónima. Su estilo irreverente y su habilidad para la comedia negra la han convertido en una de las voces más influyentes de la televisión actual. </li>
@@ -39,11 +41,11 @@
                     </ul>
                     </div>
                 </section>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-                    <img src="imgs/reparto/sian.jpg" alt="Claire - Sian Clifford">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+                    <img src="imgs/reparto/sian.jpg" alt="Claire - Sian Clifford" class="shadow-lg">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Sian Clifford </h3>
-                    <ul>  
+                    <ul class="text-sm md:text-base">  
                         <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 7 de abril de 1982 </li>
                         <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Claire </li>
                         <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actriz británica con una destacada carrera en televisión y teatro. Su papel en Fleabag le valió reconocimiento internacional y una nominación al Emmy. </li>
@@ -51,11 +53,11 @@
                     </ul>
                     </div>
                 </section>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-                    <img src="imgs/reparto/bill.jpg" alt="El padre - Bill Paterson">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+                    <img src="imgs/reparto/bill.jpg" alt="El padre - Bill Paterson" class="shadow-lg">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Bill Paterson </h3>
-                    <ul>  
+                    <ul class="text-sm md:text-base">  
                         <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 3 de junio de 1945 </li>
                         <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Padre de Fleabag </li>
                         <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actor escocés con una amplia trayectoria en cine y televisión, especializado en interpretar personajes con profundidad emocional.</li>
@@ -63,11 +65,11 @@
                     </ul>
                     </div>
                 </section>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-                    <img src="imgs/reparto/olivia.jpg" alt="Madrastra - Olivia Colman">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+                    <img src="imgs/reparto/olivia.jpg" alt="Madrastra - Olivia Colman" class="shadow-lg">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Olivia Colman </h3>
-                    <ul>  
+                    <ul class="text-sm md:text-base">  
                         <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 30 de enero de 1974 </li>
                         <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> La Madrastra </li>
                         <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actriz británica de gran prestigio, ganadora de un Oscar y un Globo de Oro. Destaca por su versatilidad en comedia y drama. </li>
@@ -75,11 +77,11 @@
                     </ul>
                     </div>
                 </section>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-                    <img src="imgs/reparto/andrew.jpg" alt="El cura - Andrew Scott">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+                    <img src="imgs/reparto/andrew.jpg" alt="El cura - Andrew Scott" class="shadow-lg">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Andrew Scott </h3>
-                    <ul>  
+                    <ul class="text-sm md:text-base">  
                         <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 21 de octubre de 1976 </li>
                         <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> El Sacerdote </li>
                         <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actor irlandés con gran reconocimiento en teatro, cine y televisión. Su interpretación del "Hot Priest" en Fleabag lo convirtió en un fenómeno cultural.  </li>
@@ -88,11 +90,11 @@
                     </div>
                 </section>
         <h2 class="text-3xl text-red-800 font-bold p-3 mt-4"> Elenco Secundario </h2>
-        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-            <img src="imgs/reparto/hugh.jpg" alt="Harry - Hugh Skinner">
+        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+            <img src="imgs/reparto/hugh.jpg" alt="Harry - Hugh Skinner" class="shadow-lg">
             <div class="flex flex-col p-3">
             <h3 class="text-2xl font-bold pb-3"> Hugh Skinner </h3>
-            <ul>  
+            <ul class="text-sm md:text-base">  
                 <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 6 de enero de 1985 </li>
                 <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Harry </li>
                 <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actor británico conocido por su participación en comedias y musicales. Suele interpretar personajes torpes y encantadoramente ridículos. </li>
@@ -100,11 +102,11 @@
             </ul>
             </div>
         </section>
-        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-            <img src="imgs/reparto/jenny.jpg" alt="Boo - Jenny Rainsford">
+        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+            <img src="imgs/reparto/jenny.jpg" alt="Boo - Jenny Rainsford" class="shadow-lg">
             <div class="flex flex-col p-3">
             <h3 class="text-2xl font-bold pb-3"> Jenny Rainsford </h3>
-            <ul>  
+            <ul class="text-sm md:text-base">  
                 <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 1985 </li>
                 <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Boo </li>
                 <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actriz británica con experiencia en teatro y televisión. Su papel como Boo, aunque breve, dejó una fuerte impresión en la audiencia. </li>
@@ -112,11 +114,11 @@
             </ul>
             </div>
         </section>
-        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row mt-4">
-            <img src="imgs/reparto/bret.jpg" alt="Martin - Brett Gelman">
+        <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start mt-4">
+            <img src="imgs/reparto/bret.jpg" alt="Martin - Brett Gelman" class="shadow-lg">
             <div class="flex flex-col p-3">
             <h3 class="text-2xl font-bold pb-3"> Brett Gelman </h3>
-            <ul>  
+            <ul class="text-sm md:text-base">  
                 <li class="pb-3"> <span class="font-bold text-l"> Fecha de nacimiento: </span> 6 de octubre de 1976 </li>
                 <li class="pb-3"> <span class="font-bold text-l"> Personaje: </span> Martin </li>
                 <li class="pb-3">  <span class="font-bold text-l"> Descripción: </span> Actor y comediante estadounidense, conocido por sus papeles en comedias y su estilo de humor incómodo y provocador. </li>
@@ -124,6 +126,11 @@
             </ul>
             </div>
         </section>
+        <div class="p-4 flex flex-col md:flex-row justify-center md:justify-around items-center gap-4">
+            <a href="fanart.html" class="focus:outline-none text-white bg-blue-950 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-blue-950 dark:hover:bg-blue-700 dark:focus:ring-blue-900 "> Ir a Fanart </a>
+            <a href="#top" class="focus:outline-none text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-blue-950 dark:hover:bg-blue-700 dark:focus:ring-blue-900 "> Volver arriba </a>
+            <a href="preguntas.html" class="focus:outline-none text-white bg-blue-950 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-blue-950 dark:hover:bg-blue-700 dark:focus:ring-blue-900 "> Ir a Preguntas Frecuentes </a>
+        </div>
     </main> 
     <footer class="w-full bg-black/50 p-3">
         <div class="max-w-4xl mx-auto text-center text-neutral-300">
@@ -137,5 +144,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="../../js/nav-hamburguesa.js"></script>
 </body>
 </html>

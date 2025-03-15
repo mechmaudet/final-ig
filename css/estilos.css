@@ -9,7 +9,16 @@ body {
     background-size: cover;
 }
 
+#fondo2 {
+    background-image: url(../imgs/fondo2.png);
+    background-size: cover;
+}
+
 h1 {
     font-family: 'Blacktones personal use', sans-serif;
     font-family: 'Alte Haas Grotesk', sans-serif;           
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }

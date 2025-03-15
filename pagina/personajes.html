@@ -8,12 +8,14 @@
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col bg-center bg-black">
+<body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-900 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="caps/index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -25,9 +27,9 @@
             </div>
         </nav>
     </header>
-    <main class=" p-3 flex-grow">
+    <main class="p-3 flex-grow bg-black m-1 rounded-lg">
             <h2 class="text-3xl text-red-800 font-bold p-3"> Personajes Principales </h2>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start">
                     <img src="../imgs/personajes/fleabag.jpg" alt="Fleabag - Phoebe Waller-Bridge">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Fleabag </h3>
@@ -48,7 +50,7 @@
                     </div>
                 </section>
             <h2 class="text-3xl text-red-800 font-bold p-3"> Familiares de Fleabag </h2>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start">
                     <img src="../imgs/personajes/padre.jpg" alt="El padre - Bill Paterson">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> El padre </h3>
@@ -90,7 +92,7 @@
                     </div>
                 </section>
             <h2 class="text-3xl text-red-800 font-bold p-3"> Personajes secundarios </h2>
-                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-row">
+                <section class="bg-blue-900/30 rounded-lg p-3 flex flex-col md:flex-row items-center md:items-start">
                     <img src="../imgs/personajes/boo.jpg" alt="Boo - Jenny Rainsford">
                     <div class="flex flex-col p-3">
                     <h3 class="text-2xl font-bold pb-3"> Boo </h3>
@@ -123,5 +125,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="../js/nav-hamburguesa.js"></script>
 </body>
 </html>

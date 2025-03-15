@@ -10,10 +10,12 @@
 </head>
 <body class="h-screen flex flex-col bg-center bg-neutral-200">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-700 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-white"> FLEABAG </h1>
-                <ul class="flex p-3 text-white items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="../extras/reparto.html" class="hover:text-white">PERSONAJES</a></li>
@@ -27,11 +29,11 @@
     </header>
     <main class="p-3 flex-grow text-black">
         <section>
-        <h2 class="pb-3 pl-2 font-bold text-4xl text-red-600"> Temporada 1 </h2>
+        <h2 class="pb-5 pl-2 pt-3 font-bold text-5xl text-red-600"> TEMPORADA 1 </h2>
             <div class="flex flex-col md:flex-row justify-center items-center gap-4 bg-teal-400/30 p-3">
                 <iframe width="700" height="394" src="https://www.youtube.com/embed/L3iqdpYoZNU?si=LIIVO_SSVk42YCWf&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="mx-auto w-full md:w-[800px] md:h-[400px]"></iframe>
                 <div class="flex flex-col">
-                <p class=" text-xl p-5 text-neutral-800 first-line:pl-2"> Es una comedia adaptada de una obra teatral protagonizada por una joven chica que intenta sobrellevar su vida después de una reciente tragedia.
+                <p class=" text-xl pb-5 pl-5 text-neutral-800 first-line:pl-2"> Es una comedia adaptada de una obra teatral protagonizada por una joven chica que intenta sobrellevar su vida después de una reciente tragedia.
                 <br>
                 Una mezcla perfecta de risas, lágrimas y momentos incómodos, Fleabag te atrapará con su irreverencia y humanidad cruda. </p>
                     <div class="p-5 pb-2">
@@ -45,33 +47,33 @@
         </section>
         <!-- CAPITULO 1-->
         <section>
-            <div class="flex flex-row p-3">
+            <div class="flex flex-col md:flex-row p-3">
                 <div id="gallery" class="relative w-full" data-carousel="static">
                 <!-- Carousel wrapper -->
-                <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/temp1/cap1/cap1-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/cap1-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="imgs/temp1/cap1/g1-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/g1-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/temp1/cap1/g2-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/g2-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/temp1/cap1/g3-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/g3-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                     <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/temp1/cap1/g4-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/g4-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                     <!-- Item 6 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="imgs/temp1/cap1/g5-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                        <img src="imgs/temp1/cap1/g5-1.jpg" class="w-full h-full object-cover" alt="Capitulo 1 Temporada 1">
                     </div>
                 </div>
                 <!-- controls -->
@@ -93,7 +95,7 @@
                 </button>
             </div>
             <!-- SINOSPSIS -->
-            <div class="flex flex-col p-3">
+            <div class="flex flex-col p-3 md:w-1/2">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 1 </h2>
                 <p class="pt-3"> Fleabag navega por su caótica vida en Londres, enfrentando relaciones fallidas, un negocio en crisis y la pérdida de su mejor amiga. </p>
                 <div class="p-5 pb-2 divide-y">
@@ -107,10 +109,10 @@
             </div>
         </section>
         <!-- CAPITULO 2-->
-        <section class=" bg-teal-400/30">
-            <div class="flex flex-row p-3">
+        <section class="bg-teal-400/30">
+            <div class="flex flex-col md:flex-row p-3">
                 <!-- SINOSPSIS -->
-                <div class="flex flex-col p-3">
+                <div class="flex flex-col p-3 md:w-1/2">
                     <h2 class=" text-red-600 text-2xl font-bold"> Episodio 2 </h2>
                     <p class="pt-3"> Entre una visita al banco, un evento feminista y tensiones familiares, Fleabag intenta encontrar equilibrio en su vida… sin mucho éxito. </p>
                     <div class="p-5 pb-2 divide-y">
@@ -121,32 +123,32 @@
                         <p class="pt-2"> <span class="text-red-600 font-bold text-l">Certificado:</span> +18 </p>
                     </div>
                 </div>
-                <div id="gallery" class="relative w-full" data-carousel="static">
+                <div id="gallery" class="relative w-full md:w-1/2" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                    <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap2/cap2-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/cap2-1.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="imgs/temp1/cap2/g1-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/g1-2.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap2/g2-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/g2-2.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap2/g3-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/g3-2.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap2/g4-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/g4-2.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap2/g5-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap2/g5-2.jpg" class="w-full h-full object-cover" alt="Capitulo 2 Temporada 1">
                         </div>
                     </div>
                     <!-- controls -->
@@ -171,33 +173,33 @@
         </section>
         <!-- CAPITULO 3-->
         <section>
-            <div class="flex flex-row p-3">
+            <div class="flex flex-col md:flex-row p-3">
                 <div id="gallery" class="relative w-full" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                    <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap3/cap3-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/cap3-1.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="imgs/temp1/cap3/g1-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/g1-3.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap3/g2-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/g2-3.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap3/g3-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/g3-3.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap3/g4-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/g4-3.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap3/g5-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap3/g5-3.jpg" class="w-full h-full object-cover" alt="">
                         </div>
                     </div>
                     <!-- controls -->
@@ -233,10 +235,10 @@
             </div>
         </section>
         <!-- CAPITULO 4-->
-        <section class=" bg-teal-400/30">
-            <div class="flex flex-row p-3">
+        <section class="bg-teal-400/30">
+            <div class="flex flex-col md:flex-row p-3">
                 <!-- SINOPSIS -->
-                <div class="flex flex-col p-3">
+                <div class="flex flex-col p-3 md:w-1/2">
                     <h2 class=" text-red-600 text-2xl font-bold"> Episodio 4 </h2>
                     <p class="pt-3"> Después de una mala crítica a su café, Fleabag busca formas poco convencionales de recuperar el control de su vida, mientras lidia con su hermana y su pasado. </p>
                     <div class="p-5 pb-2 divide-y">
@@ -247,32 +249,32 @@
                         <p class="pt-2"> <span class="text-red-600 font-bold text-l">Certificado:</span> +18 </p>
                     </div>
                 </div>
-                <div id="gallery" class="relative w-full" data-carousel="static">
+                <div id="gallery" class="relative w-full md:w-1/2" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                    <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap4/cap4-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/cap4-1.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="imgs/temp1/cap4/g1-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/g1-4.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap4/g2-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/g2-4.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap4/g3-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/g3-4.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap4/g4-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/g4-4.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap4/g5-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap4/g5-4.jpg" class="w-full h-full object-cover" alt="Capitulo 4 Temporada 1">
                         </div>
                     </div>
                     <!-- controls -->
@@ -297,33 +299,33 @@
         </section>
         <!-- CAPITULO 5-->
         <section>
-            <div class="flex flex-row p-3">
+            <div class="flex flex-col md:flex-row p-3 ">
                 <div id="gallery" class="relative w-full" data-carousel="static">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
+                    <div class="relative h-56 sm:h-72 md:h-96 overflow-hidden rounded-lg">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap5/cap5-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/cap5-1.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="imgs/temp1/cap5/g1-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/g1-5.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap5/g2-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/g2-5.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap5/g3-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/g3-5.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap5/g4-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/g4-5.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap5/g5-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap5/g5-5.jpg" class="w-full h-full object-cover" alt="Capitulo 5 Temporada 1">
                         </div>
                     </div>
                     <!-- controls -->
@@ -345,7 +347,7 @@
                     </button>
                 </div>
                 <!-- SINOPSIS -->
-                <div class="flex flex-col p-3">
+                <div class="flex flex-col md:w-1/2 p-3">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 5 </h2>
                 <p class="pt-3"> Una cena familiar se convierte en un campo de batalla emocional, revelando tensiones ocultas y poniendo a prueba las relaciones de Fleabag con su familia. </p>
                 <div class="p-5 pb-2 divide-y">
@@ -359,10 +361,10 @@
             </div>
         </section>
         <!-- CAPITULO 6-->
-        <section class=" bg-teal-400/30">
+        <section class="bg-teal-400/30">
             <!-- SINOPSIS -->
-            <div class="flex flex-row p-3">
-                <div class="flex flex-col p-3">
+            <div class="flex flex-col md:flex-row p-3">
+                <div class="flex flex-col p-3 md:w-1/2">
                 <h2 class=" text-red-600 text-2xl font-bold"> Episodio 6 </h2>
                 <p class="pt-3"> Las piezas del rompecabezas empiezan a encajar mientras Fleabag enfrenta verdades incómodas sobre su pasado, su culpa y su futuro. </p>
                 <div class="p-5 pb-2 divide-y">
@@ -378,27 +380,27 @@
                     <div class="relative h-48 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap6/cap6-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/cap6-1.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="imgs/temp1/cap6/g4-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/g4-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap6/g2-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/g2-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap6/g3-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/g3-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap6/g1-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/g1-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                         <!-- Item 6 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="imgs/temp1/cap6/g5-6.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                            <img src="imgs/temp1/cap6/g5-6.jpg" class="w-full h-full object-cover" alt="Capitulo 6 Temporada 1">
                         </div>
                     </div>
                     <!-- controls -->
@@ -421,7 +423,7 @@
                 </div>
             </div>
         </section>
-        <div class="p-4 flex flex-row justify-around ">
+        <div class="p-4 flex flex-col md:flex-row justify-center md:justify-around items-center gap-4">
             <a href="bts.html" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Ir a Behind The Scenes </a>
             <a href="#top" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Volver arriba </a>
             <a href="temp-2.html" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-20 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 "> Ir a Temporada 2</a>
@@ -440,5 +442,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="../../js/carousel.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="../../js/nav-hamburguesa.js"></script>
 </body>
 </html>

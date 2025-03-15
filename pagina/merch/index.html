@@ -8,12 +8,14 @@
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col bg-center bg-black">
+<body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-900 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="../index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="../caps/index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="../personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -25,7 +27,7 @@
             </div>
         </nav>
     </header>
-    <main class="p-3 flex-grow">
+    <main class="p-3 flex-grow bg-black m-1 rounded-lg">
     <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
         <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800" id="todosB"> Todos </button>
         <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800" id="indumentariaB"> Indumentaria </button>
@@ -44,13 +46,13 @@
                 <button class="bg-red-900 p-1 rounded-lg text-s"> Agregar a Wishlist </button>
             </div>
         </div>
-        <div class="indumentaria">
+        <div class="indumentaria p-4">
             <a href="https://articulo.mercadolibre.com.ar/MLA-1409509789-remera-fleabag-por-phoebe-waller-bridge-algodon-premium-_JM?searchVariation=179831562278#polycard_client=search-nordic&searchVariation=179831562278&position=8&search_layout=stack&type=item&tracking_id=e3c6a98a-aed6-47b9-8834-260eb40b99f4" target="_blank" class="">
             <img class="h-auto max-w-full rounded-lg" src="imgs/merch2.jpg" alt="Remera Fleabag Rosa"> </a>
-            <h3 class="font-bold p-3 text-2xl"> Remera Fleabag Poster 1era Temp </h3>
-            <div class="flex flex-row">
-                <p class="p-3""> Remera negra 100% algodón estampada DGT en rosa.</p>
-                <button class="bg-red-900 p-1 rounded-lg text-s"> Agregar a Wishlist </button>
+            <h3 class="font-bold p-3 text-2xl md:text-left"> Remera Fleabag Poster 1era Temp </h3>
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <p class="p-3 text-center md:text-left"> Remera negra 100% algodón estampada DGT en rosa.</p>
+                <button class="bg-red-900 p-1 rounded-lg text-sm"> Agregar a Wishlist </button>
             </div>
         </div>
         <div class="indumentaria">

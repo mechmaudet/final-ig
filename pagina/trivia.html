@@ -8,12 +8,14 @@
     <link href="../../css/estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet">
 </head>
-<body class="h-screen flex flex-col bg-center bg-black">
+<body class="h-screen flex flex-col bg-center bg-black" id="fondo2">
     <header class="m-4">
-        <nav class="relative flex items-start justify-center"> 
-            <div class="bg-red-900 rounded-lg flex">
-                <h1 class="text-6xl p-5 text-black"> FLEABAG </h1>
-                <ul class="flex p-3 text-black items-center">
+        <nav class="relative flex flex-wrap items-center justify-between bg-red-800 rounded-lg p-4 mix-blend-luminosity">
+            <h1 class="text-4xl sm:text-6xl p-2 text-white">FLEABAG</h1>
+            <button id="menu-button" class="sm:hidden text-white p-2">
+                &#9776; <!-- Ícono de menú hamburguesa -->
+            </button>
+            <ul id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center p-2 text-white">
                     <li class="p-3 text-l"><a href="index.html" class="hover:text-white">HOME</a></li>
                     <li class="p-3 text-l"><a href="caps/index.html" class="hover:text-white">CAPITULOS</a></li>
                     <li class="p-3 text-l"><a href="personajes.html" class="hover:text-white">PERSONAJES</a></li>
@@ -25,14 +27,14 @@
             </div>
         </nav>
     </header>
-    <main class="p-3">
+    <main class="p-3 bg-black m-1 rounded-lg">
             <h2 class="text-4xl text-red-900 font-bold p-3"> Trivia Fleabag </h2>
             <h3 class="text-2xl p-3"> ¿Cuánto conoces la serie? </h3>
             <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acaba el tiempo. Contestá en 40 segundos con la menor cantidad de errores por responder incorrectamente y la mayor cantidad de puntos respondiendo correctamente! </p>
-            <section class="p-3 rounded-lg bg-blue-800/30" id="juego">
+            <section class="p-3 rounded-lg bg-blue-800/30 relative" id="juego">
             <!-- Botón de jugar -->
-            <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute left-180 top-120" type="button" id="jugar" > JUGAR </button>
-            <div class="flex flex-row place-content-around gap-2">
+            <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute md:left-1/2 md:top-1/2 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:w-auto w-full" type="button" id="jugar" > JUGAR </button>
+            <div class="absolute top-3 left-0 right-0 flex justify-between p-3">
                 <!-- Timer -->
                 <p class="rounded-lg bg-fuchsia-900 p-5 " id="tiempo"> 00:00 </p>
                 <!-- Puntos y errores -->
@@ -104,5 +106,6 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="../js/trivia.js"></script>
+    <script src="../js/nav-hamburguesa.js"></script>
 </body>
 </html>
