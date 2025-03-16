@@ -28,23 +28,22 @@
                     <li class="p-3 text-l"><a href="premios.html" class="hover:text-black focus:text-red-500">PREMIOS</a></li>
                     <li class="p-3 text-l"><a href="merch/index.html" class="hover:text-black focus:text-red-500">MERCH</a></li>
                 </ul>
-            </div>
         </nav>
     </header>
-    <main class="p-3 bg-black/90 m-1 rounded-lg">
-            <h2 class="text-4xl text-red-800 font-bold p-3"> Trivia Fleabag </h2>
-            <h3 class="text-2xl p-3"> ¿Cuánto conoces la serie? </h3>
-            <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acabe el tiempo. Contestá en 40 segundos con la menor cantidad de errores por responder incorrectamente y la mayor cantidad de puntos respondiendo correctamente! </p>
+    <main class="p-3 bg-black/90 m-4 rounded-lg">
+            <h2 class="text-4xl text-white font-bold p-3"> Trivia Fleabag </h2>
+            <h3 class="text-2xl p-3 text-neutral-300"> ¿Cuánto conoces la serie? </h3>
+            <p class="p-3"> Completá este desafío de 10 preguntas sobre la serie antes que se acabe el tiempo. Terminá antes de 40 segundos con la menor cantidad de errores y la mayor cantidad de puntos respondiendo correctamente! </p>
             <section class="p-3 rounded-lg bg-blue-800/30 relative" id="juego">
             <!-- Botón de jugar -->
-            <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute md:left-1/2 md:top-1/2 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:w-auto w-full" type="button" id="jugar" > JUGAR </button>
+            <button class="rounded-lg bg-red-900 hover:bg-blue-900 p-3 absolute md:left-1/2 md:top-1/2 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:w-auto w-full transition duration-300" type="button" id="jugar" > JUGAR </button>
             <div class=" flex left-0 right-0 flex justify-between p-3">
                 <!-- Timer -->
-                <p class="rounded-lg bg-fuchsia-900 p-5" id="tiempo"> 00:00 </p>
+                <p class="rounded-lg bg-fuchsia-700 p-5" id="tiempo"> 00:00 </p>
                 <!-- Puntos y errores -->
                 <div class="flex flex-row">
-                    <p class="rounded-lg bg-amber-500 p-5 mr-2" id="puntos"> 0 puntos  </p>
-                    <p class="rounded-lg bg-amber-500 p-5 " id="errores"> 0 errores  </p>
+                    <p class="rounded-lg bg-fuchsia-950 p-5 mr-2" id="puntos"> 0 puntos  </p>
+                    <p class="rounded-lg bg-fuchsia-950 p-5 " id="errores"> 0 errores  </p>
                 </div>
             </div>
             <div class="flex flex-col p-3">
@@ -54,12 +53,12 @@
                 <ul class="flex flex-col p-3 self-center text-2xl" id="r"> 
                     <li id="opc1" class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
                     <li id="opc2" class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
-                    <li id="opc3 " class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
+                    <li id="opc3" class="rounded-lg bg-blue-900 hover:bg-blue-500 p-3 m-2 self-center"> </li>
                 </ul>
             </div>
         </section>
         <section>
-        <h2 class="font-bold text-2xl p-3"> Tabla de posiciones</h2>
+        <h2 class="font-bold text-2xl p-3 mt-2"> Tabla de posiciones</h2>
         <p class="p-3 text-l"> Tratá de conseguir el mejor puntaje y sé parte del top 5! </p>
         <div class="p-3 flex flex-row justify-center overflow-x-auto shadow-md"> 
             <table id="tablaPosiciones" class="m-2 w-full table-auto text-sm text-center">

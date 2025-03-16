@@ -27,8 +27,8 @@ let erroresJ = 0;
 // Timer
 let timer = document.querySelector("#tiempo");
 
-let tiempo = 0
-let limite = 40
+let tiempo = 0;
+let limite = 40;
 let intervalo; // Variable global para manejar el temporizador
 
 // Preguntas y respuestas con utilización de la IA
@@ -161,8 +161,8 @@ const preguntasyRespuestas = [
 ];
 
 // Ocultar todo
-p.style.visibility = "hidden"
-r.style.visibility = "hidden"
+p.style.visibility = "hidden";
+r.style.visibility = "hidden";
 
 ///////////////////// EVENTOS
 
@@ -180,13 +180,13 @@ jugar.addEventListener("click", function(){
   timer.innerHTML = tiempo; // Muestra el tiempo inicial
 
   // Mostrar preguntas y respuestas
-  preg.style.visibility = "visible"
-  resp.style.visibility = "visible"
+  preg.style.visibility = "visible";
+  resp.style.visibility = "visible";
 
   clearInterval(intervalo); // Elimina cualquier intervalo previo
 
   intervalo = setInterval(function() {
-      tiempo++
+      tiempo++;
       timer.innerHTML = `00:${tiempo.toString().padStart(2, "0")}`; // padstart se asegura que siempre se tengan 2 cifras
       tiempoLimite();
   }, 1000);} else { //si no ponen un nombre no pueden jugar
