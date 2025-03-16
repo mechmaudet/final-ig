@@ -28,7 +28,7 @@ let erroresJ = 0;
 let timer = document.querySelector("#tiempo");
 
 let tiempo = 0;
-let limite = 40;
+let limite = 60;
 let intervalo; // Variable global para manejar el temporizador
 
 // Preguntas y respuestas con utilización de la IA
