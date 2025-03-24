@@ -250,7 +250,7 @@ function tiempoLimite() {
         if (finDelTiempo){
             reset();
         } else {
-            window.location.href = "../pagina/index.html"; // Te lleva al home si no queres seguir jugando 
+            window.location.href = "../index.html"; // Te lleva al home si no queres seguir jugando 
         }
     }
 }
